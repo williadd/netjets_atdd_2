@@ -1,0 +1,13 @@
+git clone <url>
+
+git pull <remote> <branch>
+
+git push <remote> <branch>
+
+git status
+
+git add <files>
+
+git commit -m <comment>
+
+git remote add <name> <url>
