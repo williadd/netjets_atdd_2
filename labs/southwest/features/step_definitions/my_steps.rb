@@ -2,6 +2,10 @@ require 'page-object'
 
 include PageObject::PageFactory
 
-Given(/^I do something$/) do
-  visit_page MyPage
+When(/^I search for flights between 2 cities for a specific day$/) do
+  pending
+end
+
+Then(/^I am shown all available flight between those 2 airports for that day$/) do
+  pending
 end
