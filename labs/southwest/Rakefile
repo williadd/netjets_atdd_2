@@ -1,0 +1,21 @@
+task :asdf do
+  puts "This is a task"
+end
+
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:features) do |t|
+  t.cucumber_opts = "features --format pretty"
+end
+
+task :compile do
+  puts 'compiling'
+  x = 5/0
+  puts x
+end
+
+task :test do
+  puts 'testing'
+end
+
+task :build => [:compile, :test]
